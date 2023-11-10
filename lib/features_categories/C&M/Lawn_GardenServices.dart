@@ -2,6 +2,8 @@ import 'package:all4home/features_categories/C&M/Smaller%20Categories/GardeningS
 import 'package:all4home/features_categories/C&M/Smaller%20Categories/LawnCare.dart';
 import 'package:all4home/features_categories/C&M/Smaller%20Categories/TreeTrimming.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Lawn_GardenServices extends StatelessWidget {
   const Lawn_GardenServices({super.key});
@@ -9,10 +11,11 @@ class Lawn_GardenServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(199, 212, 197, 1),
       appBar: AppBar(
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(139, 94, 255, 142),
-        title: Text("Lawn_GardenServices"),
+        title: Text("Lawn & Garden Services"),
         centerTitle: true,
       ),
       body: Container(
@@ -77,6 +80,8 @@ class Lawn_GardenServices extends StatelessWidget {
                               child: const Text(
                                 'Lawn Care &\nMaintenance',
                                 style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -87,7 +92,7 @@ class Lawn_GardenServices extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/lawn_care_cat.png"),
                                 fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
@@ -114,9 +119,11 @@ class Lawn_GardenServices extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Tree Trimming & Removal',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -127,7 +134,8 @@ class Lawn_GardenServices extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/tree_trimming_cat.png"),
+                                fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
@@ -153,9 +161,11 @@ class Lawn_GardenServices extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Gardening Services',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -164,6 +174,11 @@ class Lawn_GardenServices extends StatelessWidget {
                             width: 100,
                             padding: const EdgeInsets.only(left: 20, right: 20),
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/gardening_cat.png"),
+                                fit: BoxFit.fill,
+                              ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
                                 color: Colors.grey,
@@ -183,7 +198,7 @@ class Lawn_GardenServices extends StatelessWidget {
             // ),
           ],
         ),
-      ),
+      ).animate().fadeIn(duration: 300.ms, delay: 200.ms),
     );
   }
 }

@@ -5,6 +5,11 @@ class Second_Hand extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Title(
+        color: Colors.black,
+        child: Text("Second Hand Market"),
+      ),
+    );
   }
 }

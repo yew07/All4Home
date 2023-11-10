@@ -2,6 +2,7 @@ import 'package:all4home/features_categories/C&M/Smaller%20Categories/CarpetClea
 import 'package:all4home/features_categories/C&M/Smaller%20Categories/DeepCleaning.dart';
 import 'package:all4home/features_categories/C&M/Smaller%20Categories/HouseCleaning.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 class Cleaning extends StatelessWidget {
   const Cleaning({super.key});
@@ -9,10 +10,11 @@ class Cleaning extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(199, 212, 197, 1),
       appBar: AppBar(
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(139, 94, 255, 142),
-        title: Text("Cleaning"),
+        title: Text("Appliances"),
         centerTitle: true,
       ),
       body: Container(
@@ -77,6 +79,8 @@ class Cleaning extends StatelessWidget {
                               child: const Text(
                                 'House Cleaning',
                                 style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -87,7 +91,7 @@ class Cleaning extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/house_cleaning_cat.png"),
                                 fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
@@ -117,6 +121,8 @@ class Cleaning extends StatelessWidget {
                               child: const Text(
                                 'Carpet Cleaning',
                                 style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -127,7 +133,8 @@ class Cleaning extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/carpet_cleaning_cat.png"),
+                                fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
@@ -156,6 +163,8 @@ class Cleaning extends StatelessWidget {
                               child: const Text(
                                 'Deep Cleaning',
                                 style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -164,6 +173,11 @@ class Cleaning extends StatelessWidget {
                             width: 100,
                             padding: const EdgeInsets.only(left: 20, right: 20),
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/deep_cleaning_cat.png"),
+                                fit: BoxFit.fill,
+                              ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
                                 color: Colors.grey,
@@ -183,7 +197,7 @@ class Cleaning extends StatelessWidget {
             // ),
           ],
         ),
-      ),
+      ).animate().fadeIn(duration: 300.ms, delay: 100.ms),
     );
   }
 }

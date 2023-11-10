@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:all4home/features_categories/services/bedroomservices.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Services_Tile extends StatelessWidget {
@@ -33,11 +34,13 @@ class Services_Tile extends StatelessWidget {
           children: [
             //Image
             Image.asset(bedservice.image),
-
+            SizedBox(
+              height: 15,
+            ),
             //Name
             Text(
               bedservice.name,
-              style: GoogleFonts.openSans(
+              style: GoogleFonts.outfit(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -53,6 +56,11 @@ class Services_Tile extends StatelessWidget {
                     color: Colors.yellow[800],
                   ),
                   Text(bedservice.rating),
+                  SizedBox(
+                    width: 60,
+                  ),
+                  Icon(Icons.place),
+                  Text(bedservice.location),
                 ],
               ),
             ),
@@ -62,13 +70,13 @@ class Services_Tile extends StatelessWidget {
               height: 100,
               child: Column(
                 children: [
-                  Text(bedservice.description),
+                  Text(bedservice.servicetype),
                 ],
               ),
             )
           ],
         ),
-      ),
+      ).animate().fadeIn(duration: 300.ms, delay: 200.ms),
     );
   }
 }

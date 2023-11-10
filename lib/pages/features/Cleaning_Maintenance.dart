@@ -4,6 +4,7 @@ import 'package:all4home/features_categories/C&M/ElectricalServices.dart';
 import 'package:all4home/features_categories/C&M/Lawn_GardenServices.dart';
 import 'package:all4home/features_categories/C&M/Plumbing.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Cleaning_Maintenance extends StatefulWidget {
@@ -64,20 +65,20 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
               margin: const EdgeInsets.all(10.0),
               width: 400.0,
               height: 200.0,
-            ),
+            ).animate().fadeIn(duration: 300.ms, delay: 200.ms),
 
 //Text displaying Categories
             const SizedBox(height: 5),
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
                 'Categories',
-                style: TextStyle(
+                style: GoogleFonts.outfit(
                   color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
-              ),
+              ).animate().fadeIn(duration: 400.ms, delay: 300.ms),
             ),
 
             SizedBox(
@@ -98,9 +99,10 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                       );
                     },
                     child: Container(
-                      child: const Text(
-                        'Appliances',
-                        style: TextStyle(
+                      child: Text(
+                        'Cleaning',
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -108,6 +110,9 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                       width: 100,
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/cleaning_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -129,15 +134,19 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                       );
                     },
                     child: Container(
-                      child: const Text(
-                        'Cleaning',
-                        style: TextStyle(
+                      child: Text(
+                        'Appliances',
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/appliances_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -161,13 +170,17 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                     child: Container(
                       child: Text(
                         'Electrical Services',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/electrical_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -189,15 +202,20 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Lawn & Garden Services',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image:
+                              AssetImage("assets/images/lawn_garden_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -219,15 +237,19 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Plumbing Services',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/plumbing_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -238,7 +260,7 @@ class _Cleaning_MaintenanceState extends State<Cleaning_Maintenance> {
                     ),
                   ),
                 ],
-              ),
+              ).animate().fadeIn(duration: 300.ms, delay: 200.ms),
             ),
           ],
         ),

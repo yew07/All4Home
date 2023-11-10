@@ -38,7 +38,7 @@ class DrawerList extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
-                    return My_Profile();
+                    return MyProfile();
                   },
                 ),
               );

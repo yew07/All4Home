@@ -77,7 +77,7 @@ class MyApp extends StatelessWidget {
         home: const LoginScreen(),
         routes: {
           '/first_page': (context) => first_page(),
-          '/My_Profile': (context) => My_Profile(),
+          '/My_Profile': (context) => MyProfile(),
           '/Settings': (context) => Settings(),
           '/AboutUs': (context) => AboutUs(),
           '/ContactUs': (context) => ContactUs(),
@@ -128,7 +128,6 @@ class MyApp extends StatelessWidget {
           '/SecureSystem': (context) => SecureSystem(),
           '/SmartAppliance': (context) => SmartAppliance(),
           '/SmartVoice': (context) => SmartVoice(),
-          
         },
       ),
     );

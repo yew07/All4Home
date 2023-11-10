@@ -2,6 +2,7 @@ import 'package:all4home/features_categories/SH/Smaller%20Categories/SecureSyste
 import 'package:all4home/features_categories/SH/Smaller%20Categories/SmartAppliance.dart';
 import 'package:all4home/features_categories/SH/Smaller%20Categories/SmartVoice.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Designer_Agencies extends StatelessWidget {
   const Designer_Agencies({super.key});
@@ -9,6 +10,7 @@ class Designer_Agencies extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(199, 212, 197, 1),
       appBar: AppBar(
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(139, 94, 255, 142),
@@ -74,9 +76,11 @@ class Designer_Agencies extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Security systems',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  fontSize: 20,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -87,7 +91,7 @@ class Designer_Agencies extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/secure_system_cat.png"),
                                 fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
@@ -114,9 +118,11 @@ class Designer_Agencies extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Smart Appliances',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  fontSize: 20,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -127,7 +133,8 @@ class Designer_Agencies extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/smart_appliances_cat.png"),
+                                fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
@@ -153,9 +160,11 @@ class Designer_Agencies extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Smart Voice Activation Systems',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  fontSize: 20,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -164,6 +173,11 @@ class Designer_Agencies extends StatelessWidget {
                             width: 100,
                             padding: const EdgeInsets.only(left: 20, right: 20),
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/smart_voice_cat.png"),
+                                fit: BoxFit.fill,
+                              ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
                                 color: Colors.grey,

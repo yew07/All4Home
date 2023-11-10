@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917851004537",
+    "project_id": "all4home-5120a",
+    "storage_bucket": "all4home-5120a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917851004537:android:7c69a1405272f10531bea8",
+        "android_client_info": {
+          "package_name": "com.example.all4home"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT8uTFXKqjKR9SntgtMgHkd2Blz61BHzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

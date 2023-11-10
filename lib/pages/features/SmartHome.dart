@@ -64,11 +64,11 @@ class _SmartHomeState extends State<SmartHome> {
 
 //Text displaying Categories
             const SizedBox(height: 5),
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
                 'Categories',
-                style: TextStyle(
+                style: GoogleFonts.outfit(
                   color: Colors.black,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class _SmartHomeState extends State<SmartHome> {
 
             SizedBox(
               width: 320,
-              height: 380,
+              height: 315,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -94,9 +94,10 @@ class _SmartHomeState extends State<SmartHome> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Designers & Agencies',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -104,6 +105,10 @@ class _SmartHomeState extends State<SmartHome> {
                       width: 100,
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage("assets/images/designer_agencies_cat.png"),
+                ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,

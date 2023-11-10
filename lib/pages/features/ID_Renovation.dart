@@ -79,7 +79,7 @@ class _ID_RenovationState extends State<ID_Renovation> {
 
             SizedBox(
               width: 320,
-              height: 380,
+              height: 300,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -95,9 +95,10 @@ class _ID_RenovationState extends State<ID_Renovation> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Interior Design',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -105,6 +106,10 @@ class _ID_RenovationState extends State<ID_Renovation> {
                       width: 100,
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage("assets/images/interior_design_cat.png"),
+                ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -126,15 +131,20 @@ class _ID_RenovationState extends State<ID_Renovation> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Moving and Storage',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage("assets/images/movingnstorage_cat.png"),
+                ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,

@@ -1,5 +1,6 @@
 import 'package:all4home/first_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'forgot_pass.dart';
@@ -26,23 +27,23 @@ class LoginScreen extends StatelessWidget {
                   "Welcome Back,",
                   style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 25.sp),
-                ),
+                ).animate().fadeIn(delay: 300.ms, duration: 400.ms),
                 Image.asset(
                   "assets/images/All4Home Logo.png",
                   height: 200.h,
                   width: double.infinity,
-                ),
+                ).animate().fadeIn(delay: 600.ms, duration: 400.ms),
                 Text(
                   "Sign in to continue",
                   style: TextStyle(fontSize: 16.sp),
-                ),
+                ).animate().fadeIn(delay: 300.ms, duration: 400.ms),
                 SizedBox(
                   height: 20.h,
                 ),
                 Text(
                   "Email",
                   style: TextStyle(fontSize: 13.sp),
-                ),
+                ).animate().fadeIn(delay: 300.ms, duration: 400.ms),
                 Container(
                   decoration: BoxDecoration(
                       border: Border.all(
@@ -57,14 +58,14 @@ class LoginScreen extends StatelessWidget {
                         hintText: 'Enter Your Email',
                         contentPadding: EdgeInsets.all(15)),
                   ),
-                ),
+                ).animate().fadeIn(delay: 500.ms, duration: 400.ms),
                 SizedBox(
                   height: 20.h,
                 ),
                 Text(
                   "Password",
                   style: TextStyle(fontSize: 12.sp),
-                ),
+                ).animate().fadeIn(delay: 300.ms, duration: 400.ms),
                 Container(
                   decoration: BoxDecoration(
                       border: Border.all(
@@ -80,21 +81,22 @@ class LoginScreen extends StatelessWidget {
                         hintText: 'Enter Password',
                         contentPadding: EdgeInsets.all(15)),
                   ),
-                ),
+                ).animate().fadeIn(delay: 500.ms, duration: 400.ms),
                 SizedBox(
                   height: 10.h,
                 ),
                 InkWell(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (_) => const ForgotPassword()));
-                    },
-                    child: Text(
-                      "Forgot Password ? ",
-                      style: TextStyle(fontSize: 12.sp, color: Colors.grey),
-                    )),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => const ForgotPassword()));
+                  },
+                  child: Text(
+                    "Forgot Password ? ",
+                    style: TextStyle(fontSize: 12.sp, color: Colors.grey),
+                  ).animate().fadeIn(delay: 300.ms, duration: 400.ms),
+                ),
                 SizedBox(
                   height: 10.h,
                 ),
@@ -116,7 +118,7 @@ class LoginScreen extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const first_page()));
                   },
-                ),
+                ).animate().fadeIn(delay: 400.ms, duration: 600.ms),
                 SizedBox(
                   height: 8.h,
                 ),

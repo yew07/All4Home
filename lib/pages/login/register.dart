@@ -26,7 +26,7 @@ class RegisterScreen extends StatelessWidget {
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 25.sp),
                 ),
                 Image.asset(
-                  "assets/register.jpg",
+                  "assets/design.png",
                   height: 250.h,
                   width: double.infinity,
                 ),
@@ -126,7 +126,7 @@ class RegisterScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "already have an account ? ",
+                      "Already have an account ? ",
                       style: TextStyle(
                           fontWeight: FontWeight.normal,
                           fontSize: 14.sp,

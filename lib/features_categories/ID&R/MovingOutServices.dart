@@ -2,6 +2,7 @@ import 'package:all4home/features_categories/ID&R/Smaller%20Categories/DistanceM
 import 'package:all4home/features_categories/ID&R/Smaller%20Categories/PackingUnpacking.dart';
 import 'package:all4home/features_categories/ID&R/Smaller%20Categories/StorageSolutions.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MovingOutServices extends StatelessWidget {
   const MovingOutServices({super.key});
@@ -9,6 +10,7 @@ class MovingOutServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(199, 212, 197, 1),
       appBar: AppBar(
         toolbarHeight: 60,
         backgroundColor: Color.fromARGB(139, 94, 255, 142),
@@ -74,9 +76,11 @@ class MovingOutServices extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Local and long-distance moving',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -87,7 +91,7 @@ class MovingOutServices extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/local_long_cat.png"),
                                 fit: BoxFit.fill,
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
@@ -114,9 +118,11 @@ class MovingOutServices extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Packing & Unpacking services',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  color: Colors.white,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -128,7 +134,7 @@ class MovingOutServices extends StatelessWidget {
                               image: DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage(
-                                    "assets/images/kitchen background.jpg"),
+                                    "assets/images/packing_unpacking_cat.png"),
                               ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
@@ -154,9 +160,11 @@ class MovingOutServices extends StatelessWidget {
                           },
                           child: Container(
                             child: Center(
-                              child: const Text(
+                              child: Text(
                                 'Storage solutions',
-                                style: TextStyle(
+                                style: GoogleFonts.outfit(
+                                  fontSize: 20,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
@@ -165,6 +173,11 @@ class MovingOutServices extends StatelessWidget {
                             width: 100,
                             padding: const EdgeInsets.only(left: 20, right: 20),
                             decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/storage_solution_cat.png"),
+                                fit: BoxFit.fill,
+                              ),
                               color: Color.fromRGBO(224, 212, 205, 1),
                               border: Border.all(
                                 color: Colors.grey,

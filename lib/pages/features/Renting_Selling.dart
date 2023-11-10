@@ -22,7 +22,7 @@ class _Renting_SellingState extends State<Renting_Selling> {
         backgroundColor: Color(0xFF1A7450),
         title: Text(
           "Renting & Selling",
-          style: GoogleFonts.openSans(
+          style: GoogleFonts.outfit(
             fontSize: 15,
             fontWeight: FontWeight.bold,
           ),
@@ -81,7 +81,7 @@ class _Renting_SellingState extends State<Renting_Selling> {
 
             SizedBox(
               width: 320,
-              height: 380,
+              height: 315,
               child: ListView(
                 scrollDirection: Axis.vertical,
                 children: [
@@ -97,9 +97,10 @@ class _Renting_SellingState extends State<Renting_Selling> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Cleaning & Repairment Tools',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -107,6 +108,11 @@ class _Renting_SellingState extends State<Renting_Selling> {
                       width: 100,
                       padding: const EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "assets/images/repairment_tools_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -128,15 +134,21 @@ class _Renting_SellingState extends State<Renting_Selling> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Interior Market',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image:
+                              AssetImage("assets/images/interior_market_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -160,13 +172,19 @@ class _Renting_SellingState extends State<Renting_Selling> {
                     child: Container(
                       child: Text(
                         'Smart Market',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image:
+                              AssetImage("assets/images/smart_market_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,
@@ -188,15 +206,21 @@ class _Renting_SellingState extends State<Renting_Selling> {
                       );
                     },
                     child: Container(
-                      child: const Text(
+                      child: Text(
                         'Second Hand Market',
-                        style: TextStyle(
+                        style: GoogleFonts.outfit(
+                          fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       height: 100,
                       padding: EdgeInsets.only(left: 20, right: 20),
                       decoration: BoxDecoration(
+                        image: DecorationImage(
+                          fit: BoxFit.fill,
+                          image: AssetImage(
+                              "assets/images/second_hand_market_cat.png"),
+                        ),
                         color: Color.fromRGBO(224, 212, 205, 1),
                         border: Border.all(
                           color: Colors.grey,

@@ -1,4 +1,4 @@
-# All4home
+# All4Home
 
 A flutter project showcasing a prototype for a Home Lifestyle Improvement Service platform by Team Hamjinbeng for DevHack 2023. 
 
@@ -8,3 +8,6 @@ The 4 main types of our service provider on our platform is `Cleaning & Maintena
 
 ## How to run All4Home
 If you wish to run the application, kindly run `main.dart` in lib folder.
+
+
+## Screenshots of our Application
